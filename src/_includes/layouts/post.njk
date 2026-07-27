@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <h2>{{ title }}{% if category %} | {{ category }}{% endif %}</h2>
+  <div class="meta">{{ author }} · {{ date | dateDisplay }}</div>
+  {{ content | safe }}
+</article>
