@@ -10,6 +10,7 @@ export default function (eleventyConfig) {
   );
 
   return {
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     dir: {
       input: "src",
       includes: "_includes",
