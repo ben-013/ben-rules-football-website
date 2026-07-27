@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description or 'The greatest sport that never was.' }}">
+  <title>{% if title %}{{ title }} | {% endif %}Ben Rules Football</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+  <header>
+    <h1><a href="/">BEN RULES FOOTBALL</a></h1>
+    <p class="tagline">The greatest sport that never was</p>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>© 2026 Ben Rules Football</footer>
+</body>
+</html>
